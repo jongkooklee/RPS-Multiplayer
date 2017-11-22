@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+
+<body>
+    
+    <header class="title center">
+        <h1 id="maintitle">Rock Paper Scissors</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col m4 offset-m4 center-align">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="name" type="text" class="validate">
+                      <label for="name">Name:</label>
+                    </div>
+                    <a class="waves-effect waves-light btn" id="namebutton">Submit</a>
+                   </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="player1" class="box col m4 center-align valign-wrapper">
+            	<p>Waiting for Player 1</p>
+            </div>
+            <div class="box col m4 center-align valign-wrapper">
+            </div>
+            <div id="player2" class="box col m4 center-align valign-wrapper">
+            	<p>Waiting for Player 2</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col m6 offset-m3">
+                <form>
+			        <div class="input-field col s12">
+			          <textarea id="textarea1" class="materialize-textarea"></textarea>
+			          <label for="textarea1">Textarea</label>
+			        </div>	
+                </form>
+            </div>
+        </div>      
+    </div>
+
+
+    <!-- Compiled and minified JavaScript -->
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBe-0x4suZJAJ3Fic7bG35QbmHt4FDfSsA",
+    authDomain: "rockpaperscissors-f689e.firebaseapp.com",
+    databaseURL: "https://rockpaperscissors-f689e.firebaseio.com",
+    projectId: "rockpaperscissors-f689e",
+    storageBucket: "rockpaperscissors-f689e.appspot.com",
+    messagingSenderId: "524447458059"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    </script>
+    <script type="text/javascript" src="./assets/js/javascript.js"></script>
+</body>
+
+</html>

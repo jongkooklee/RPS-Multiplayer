@@ -1,0 +1,12 @@
+.box {
+	height: 200px;
+	border-style: solid;
+	border-color: lightgray;
+	border: 1px;
+}
+
+#maintitle {
+	font-family: "Open Sans";
+	font-weight: bold;
+	font-size: 40px;
+}
